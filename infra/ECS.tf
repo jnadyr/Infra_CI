@@ -2,8 +2,7 @@ module "ecs" {
   source = "terraform-aws-modules/ecs/aws"
 
   cluster_name       = var.ambiante
-#  fargate_capacity_providers = { trocado por capacity_providers pq fargate_capacity_providers não é mais suportado!
-  capacity_providers = {
+  fargate_capacity_providers = {
     FARGATE = {
       default_capacity_provider_strategy = {
         weight = 100
