@@ -9,7 +9,7 @@ module "ecs" {
 #      }
 #    }
 #  }
-#}
+}
 
 resource "aws_ecs_task_definition" "Go-API" {
   family                   = "Go-API"
